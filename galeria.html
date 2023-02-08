@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Alexander Graham</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logoColegio.png"></a> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="niveles.html">NIVELES</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Galeria</h1>
+    </section>
+    <!--------Blog page content------->
+        <section style="margin-top: 3rem;" class="portafolio">
+            <div class="contenedor">
+                <h1 id="other">Galeria</h1>
+                <p id="p1">Somos una institución que forma estudiantes en valores.</p>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="images/primaria.jpg">
+                    </div>
+                    <div class="imagen-port">
+                        <img src="images/secundaria.jpg">
+                    </div>
+                    <div class="imagen-port">
+                        <img src="images/historia.jpg">
+                    </div>
+                    <div class="imagen-port">
+                        <img src="images/Mision.jpg">
+                    </div>
+                    <div class="imagen-port">
+                        <img src="images/Vision.jpg">
+                    </div>
+                    <div class="imagen-port">
+                        <img src="images/img1.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--------Footer------->
+    <section class="footer" style="background: #000;">
+        <h4 style="color: #FFF;">Sobre nosotros</h4>
+        <p style="color: #FFF;">Conoce más acerca de nosotros a través de nuestras redes sociales</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+        </div>
+        <p style="color: #FFF;">Institución Educativa Alexander Graham Bell</p>
+    </section>
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

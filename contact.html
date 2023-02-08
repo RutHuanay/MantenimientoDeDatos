@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Alexander Graham</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logoColegio.png"></a> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="niveles.html">NIVELES</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contactanos</h1>
+    </section>
+    <!--------Contact Us------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487.83180627689853!2d-76.83378258531951!3d-11.998395200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3d9bbeb94bd%3A0x7c477a6a3b3f0e57!2sIEP%20%22VIRGEN%20DEL%20ROSARIO%22%20Inicial%20Y%20PRIMARIA.!5e0!3m2!1ses-419!2spe!4v1669612511981!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Urbanización Fhiladelfia 1ra etapa.</h5>
+                        <p>Mz. G Lt. 25</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+51 910 507 180</h5>
+                        <p>Atención de Lunes a Viernes</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>alexanderaham@gmail.com</h5>
+                        <p>Envíanos un correo electrónico con tu consulta</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php">
+                    <input type="text" name="name" placeholder="Ingresa tu nombre" required>
+                    <input type="email" name="email" placeholder="Ingresa tu correo" required>
+                    <input type="text" name="subject" placeholder="Ingresa tu asunto" required>
+                    <textarea rows="8" name="message" placeholder="Ingresa el mensaje" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--------Footer------->
+    <section class="footer" style="background: #000;">
+        <h4 style="color: #FFF;">Sobre nosotros</h4>
+        <p style="color: #FFF;">Conoce más acerca de nosotros a través de nuestras redes sociales</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+        </div>
+        <p style="color: #FFF;">Institución Educativa Alexander Graham Bell</p>
+    </section>
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

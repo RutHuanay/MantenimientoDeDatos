@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Alexander Graham</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logoColegio.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="niveles.html">NIVELES</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Nosotros</h1>
+    </section>
+    <!--------Nuestra Historia------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>NUESTRA HISTORIA</h1>
+                <p>Nuestra Institución Educativa nació el 23 de setiembre del 2014 en memoria de ALEXANDER GRAHAM BELL, que fue un gran científico, inventor y logopeda británico, naturalizado estadounidense, que contribuyó con sus trabajos en el desarrollo de las telecomunicaciones. Muchos inventos ocuparon gran parte de la vida de Bell, entre ellos: el teléfono,  la construcción del hidroala y los estudios de aeronáutica. Alexander Graham Bell fue uno de los fundadores de la National Geographic Society. <br>Nuestra Institución inicio sus labores académicas en la Urbanización el Lúcumo, con formación científica y valores. Actualmente la sede de nuestra Institución educativa se encuentra en la Urbanización Fhiladelfia de Pariachi, Ate. <br>De nuestra institución han egresado muchos estudiantes que continuaron sus estudios universitarios para ser grandes profesionales. <br>Seguiremos contribuyendo con nuestra sociedad en la formación integral y científica de nuestros alumnos, pues nuestra visión de proyección es amplia y ambiciosa. Dicho propósito será factible con el apoyo de los profesores, alumnos y padres de familia.</p>
+                <a href="" class="hero-btn red-btn">SABER MÁS</a>
+            </div>
+            <div class="about-col">
+                <img src="images/historia.jpg">
+            </div>
+        </div>
+    </section>
+    <!--------Misión y Visión------->
+    <section class="facilities">
+        <h1>Misión y Visión</h1>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/Mision.jpg">
+                <h3>Misión</h3>
+                <p>Brindar a los estudiantes de un excelente servicio académico basándonos en el desarrollo del pensamiento científico de los alumnos, así como el fomento de una formación integral, conducida por docentes especialistas en sus áreas curriculares y de amplia experiencia para la exigencia y alto nivel académico, preparando y dotando así a nuestros estudiantes de las competencias necesarias para que puedan asumir los retos en la vida universitaria.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/Vision.jpg">
+                <h3>Visión</h3>
+                <p>Ser una institución educativa líder, que brinda a sus estudiantes una educación integral, innovadora y de excelencia académica, mediante una formación humanista, científica y tecnológica; de modo que sus egresados sean líderes que promuevan la transformación del país y el desarrollo digno de la sociedad.</p>
+            </div>
+        </div>
+    </section>
+    <!--------Footer------->
+    <section class="footer" style="background: #000;">
+        <h4 style="color: #FFF;">Sobre nosotros</h4>
+        <p style="color: #FFF;">Conoce más acerca de nosotros a través de nuestras redes sociales</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+        </div>
+        <p style="color: #FFF;">Institución Educativa Alexander Graham Bell</p>
+    </section>
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
